@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/result_activity_item_spacing"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView 
+	   		android:id="@+id/current_temperature"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:textSize="18sp" />
+        
+        <TextView 
+	        android:id="@+id/main_weather_condition"
+	        android:layout_width="0dp"
+	        android:layout_weight="2"
+	        android:gravity="center"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/black"
+	        android:textSize="18sp" />
+        
+    </LinearLayout>
+    
+	<TextView
+    	android:id="@+id/check_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/result_activity_item_spacing"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/result_activity_item_spacing"
+	    android:orientation="horizontal"
+	    android:background="@android:color/darker_gray" >
+            
+       <TextView 
+            android:id="@+id/wind_item_identifier"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+   			android:textColor="@android:color/black"
+   			android:textSize="14sp"
+   			android:text="Wind" />
+       
+       <TextView 
+            android:id="@+id/wind_item_value"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+   			android:textColor="@android:color/black"
+   			android:textSize="14sp" />
+            
+	</LinearLayout>	  
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@drawable/black_border" >
+            
+       <TextView 
+            android:id="@+id/pressure_item_identifier"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+   			android:textColor="@android:color/black"
+   			android:textSize="14sp"
+   			android:text="Pressure" />
+       
+       <TextView 
+            android:id="@+id/pressure_item_value"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+   			android:textColor="@android:color/black"
+   			android:textSize="14sp" />
+            
+	</LinearLayout>	  
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="@android:color/darker_gray" >
+            
+       <TextView 
+            android:id="@+id/humidity_item_identifier"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+   			android:textColor="@android:color/black"
+   			android:textSize="14sp"
+   			android:text="Humidity" />
+       
+       <TextView 
+            android:id="@+id/humidity_item_value"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:gravity="center"
+   			android:textColor="@android:color/black"
+   			android:textSize="14sp" />
+            
+	</LinearLayout>	  
+			
+</LinearLayout>

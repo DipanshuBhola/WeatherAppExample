@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/result_activity_item_spacing" >
+    
+    <LinearLayout
+        android:id="@+id/days5_hours3_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" > 
+            
+        <TextView 
+        	android:id="@+id/days5_hours3_hint"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/result_activity_hint_text_height"
+            android:padding="@dimen/result_activity_item_spacing"
+            android:layout_marginBottom="@dimen/result_activity_item_spacing"
+            android:gravity="center"
+            android:text="Choose location to get 5 day/3 hour forecast"
+            style="@style/hintTextStyle"
+            android:background="@android:color/holo_blue_light" />
+          
+		<Spinner
+	    	android:id="@+id/days5_hours3_support_entries"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" /> 
+            
+	</LinearLayout>    
+    
+	<TextView
+		android:id="@+id/city_name_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="@android:color/black"
+	    android:textSize="16sp"
+	    android:layout_below="@id/days5_hours3_data"
+	    android:layout_marginTop="20dp" />    
+	    
+	<ListView 
+	    android:id="@+id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/city_name_text"
+	    android:layout_marginTop="10dp"
+	    android:divider="@android:color/transparent"
+	    android:dividerHeight="@dimen/result_activity_item_spacing" />
+    
+</RelativeLayout>
